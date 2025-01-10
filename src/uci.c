@@ -114,10 +114,10 @@ void ParseGo(char* in, SearchParams* params, Board* board, ThreadData* threads) 
           params->searchable.moves[params->searchable.count++] = rootMoves.moves[i];
   }
 
-  if (perft) {
-    PerftTest(perft, board);
-    return;
-  }
+  // if (perft) {
+  //   PerftTest(perft, board);
+  //   return;
+  // }
 
   params->depth = depth;
 
