@@ -668,11 +668,11 @@ Score Evaluate(Board* board, ThreadData* thread) {
     return 0;
 
   Score eval = UNKNOWN;
-  if (bits(board->occupancies[BOTH]) == 3) {
-    eval = EvaluateKXK(board);
-  } else if (!(board->pieces[PAWN_WHITE] | board->pieces[PAWN_BLACK])) {
-    eval = EvaluateMaterialOnlyEndgame(board);
-  }
+  // if (bits(board->occupancies[BOTH]) == 3) {
+  //   eval = EvaluateKXK(board);
+  // } else if (!(board->pieces[PAWN_WHITE] | board->pieces[PAWN_BLACK])) {
+  //   eval = EvaluateMaterialOnlyEndgame(board);
+  // }
 
   // A specific endgame calculation returned a score
   if (eval != UNKNOWN)
