@@ -21,8 +21,8 @@
 
 int Push(Board* board, int ss);
 int StaticMaterialScore(int side, Board* board);
-int EvaluateMaterialOnlyEndgame(Board* board);
-int EvaluateKXK(Board* board);
+//int EvaluateMaterialOnlyEndgame(Board* board);
+//int EvaluateKXK(Board* board);
 
 uint8_t GetKPKBit(uint32_t bit);
 uint32_t KPKIndex(int ssKing, int wsKing, int p, int stm);
